@@ -1,3 +1,9 @@
+## Movie Flask
+
+### Tech stack
+
+react hooks, redux, react-dnd, dexie,
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
