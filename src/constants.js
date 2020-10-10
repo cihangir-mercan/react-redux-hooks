@@ -1,0 +1,5 @@
+export const ADD_MOVIE = "ADD_MOVIE";
+export const UPDATE_MOVIE = "UPDATE_MOVIE";
+export const DELETE_MOVIE = "DELETE_MOVIE";
+export const LOAD_MOVIES = "LOAD_MOVIES";
+export const SET_SELECTED_MOVIE_ID = "SET_SELECTED_MOVIE_ID";

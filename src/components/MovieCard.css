@@ -1,0 +1,7 @@
+.card {
+    flex: 0 0 185px;
+    height: 69px;
+    margin: 10px;
+    cursor: grab !important;
+}
+

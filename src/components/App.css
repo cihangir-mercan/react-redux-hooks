@@ -1,0 +1,43 @@
+.App {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.header {
+    height: 55px;
+}
+
+.footer {
+    height: 110px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 10px;
+}
+
+.main {
+    height: calc(100vh - 165px);
+}
+
+.search-container {
+    display: inline-block;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.list-container {
+    display: flex;
+    height: 100%;
+}
+
+.list-container > * {
+    overflow-y: auto;
+}
+
+.footer svg {
+    fill: #f5f8fa;
+}
+
+legend {
+    border : 1px solid #000;
+}
