@@ -1,10 +1,10 @@
 ## Movie Flask
 
-## https://cihangir-mercan.github.io/react-redux-hooks/
+### https://cihangir-mercan.github.io/react-redux-hooks/
 
 ### Tech stack
 
-react hooks, redux, react-dnd, dexie,
+React Hooks, Redux, React DND and Dexie.js.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
