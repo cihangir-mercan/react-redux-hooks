@@ -8,7 +8,7 @@
 }
 
 .footer {
-    height: 110px;
+    height: 100px;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
@@ -16,7 +16,7 @@
 }
 
 .main {
-    height: calc(100vh - 165px);
+    height: calc(100vh - 155px);
 }
 
 .search-container {
