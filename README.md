@@ -1,6 +1,4 @@
-## Movie Flask
-
-### https://cihangir-mercan.github.io/react-redux-hooks/
+https://cihangir-mercan.github.io/react-redux-hooks/
 
 ### Tech stack
 
