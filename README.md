@@ -1,5 +1,7 @@
 https://cihangir-mercan.github.io/react-redux-hooks/
 
+Boilerplate-like app for keeping movies.
+
 ### Tech stack
 
 React Hooks, Redux, React DND and Dexie.js.
