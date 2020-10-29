@@ -12,8 +12,8 @@ const movies = (state = [], {type, payload}) => {
             const updatedMovie = Object.assign({}, movieToUpdate, {which: payload.which});
             return [
                 ...state.slice(0, index),
-                updatedMovie,
-                ...state.slice(index + 1)
+                ...state.slice(index + 1),
+                updatedMovie
             ]
         }
         case DELETE_MOVIE:

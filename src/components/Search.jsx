@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./MovieCard.css";
+import "./Search.css";
 import {addMovie} from "../actions";
 import {useDispatch} from "react-redux";
 

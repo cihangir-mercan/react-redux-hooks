@@ -5,6 +5,7 @@ import MovieList from "./MovieList";
 import MovieCard from "./MovieCard";
 import {useDispatch, useSelector} from "react-redux";
 import {loadMovies} from "../actions";
+import './MovieListPlatform.css';
 
 const MovieListPlatform = () => {
     const movies = useSelector(state => state.movies) || [];

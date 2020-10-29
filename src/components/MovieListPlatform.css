@@ -1,0 +1,8 @@
+.list-container {
+    display: flex;
+    height: 100%;
+}
+
+.list-container .list {
+    overflow-y: auto;
+}

@@ -4,7 +4,7 @@
 }
 
 .header {
-    height: 55px;
+    height: 88px;
 }
 
 .footer {
@@ -16,28 +16,9 @@
 }
 
 .main {
-    height: calc(100vh - 155px);
-}
-
-.search-container {
-    display: inline-block;
-    width: 400px;
-    margin-top: 10px;
-}
-
-.list-container {
-    display: flex;
-    height: 100%;
-}
-
-.list-container > * {
-    overflow-y: auto;
+    height: calc(100vh - 188px);
 }
 
 .footer svg {
     fill: #f5f8fa;
-}
-
-legend {
-    border : 1px solid #000;
 }

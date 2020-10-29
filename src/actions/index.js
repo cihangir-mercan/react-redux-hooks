@@ -22,7 +22,6 @@ export const loadMovies = () => {
                     type: LOAD_MOVIES,
                     payload: movies
                 });
-
             });
     };
 };
