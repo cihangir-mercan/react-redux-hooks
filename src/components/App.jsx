@@ -12,8 +12,7 @@ function App() {
 
     useEffect(() => {
         sendPerformanceAnalytics();
-
-    }, []);
+    });
 
     return (
         <div className="App">
