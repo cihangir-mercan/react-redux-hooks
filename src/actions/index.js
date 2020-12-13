@@ -29,7 +29,6 @@ export const loadMovies = () => {
 export const addMovie = (title, cb) => {
     return dispatch => {
         const movieToAdd = {title, which: 'watch'};
-        console.log('test')
         db.table("movies")
             .add(movieToAdd)
             .then(id => {

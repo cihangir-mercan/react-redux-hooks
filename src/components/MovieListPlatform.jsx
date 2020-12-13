@@ -16,8 +16,6 @@ const MovieListPlatform = () => {
         dispatch(loadMovies())
     }, [dispatch])
 
-    console.log('rendered', movies);
-
     return (
 
         <DndProvider backend={HTML5Backend}>
