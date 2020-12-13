@@ -6,13 +6,8 @@ import "./MovieCard.css";
 import MovieListPlatform from "./MovieListPlatform";
 import Search from "./Search";
 import Titles from "./Titles";
-import {sendPerformanceAnalytics} from "../utils/PerfAnalytics";
 
 function App() {
-
-    useEffect(() => {
-        sendPerformanceAnalytics();
-    });
 
     return (
         <div className="App">

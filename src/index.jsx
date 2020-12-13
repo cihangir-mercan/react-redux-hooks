@@ -12,7 +12,6 @@ import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from './serviceWorker';
 import rootReducer from "./reducers";
 
-
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
