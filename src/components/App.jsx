@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {Icon} from "@blueprintjs/core";
 import './App.css';
 import "./MovieList.css";
