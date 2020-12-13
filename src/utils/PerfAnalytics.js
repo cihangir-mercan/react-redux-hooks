@@ -1,4 +1,3 @@
-import {getFCP} from "web-vitals";
 import axios from "axios";
 
 export function sendPerformanceAnalytics() {
@@ -14,29 +13,30 @@ export function sendPerformanceAnalytics() {
             })
         })
 
-        // Measure and log FCP as soon as it's available.
-        getFCP((rep) => {
-            const fcp = rep.value;
+        let fcp = 0;
+        let performanceEntries = performance.getEntriesByType('paint');
+        performanceEntries.forEach((performanceEntry, i, entries) => {
+            if (performanceEntry.name === "first-contentful-paint") {
+                fcp = performanceEntry.startTime;
+            }
+        });
 
-            // Send a POST request
-            const API_URL = "https://perfanalytics-backend.herokuapp.com/analytics";
-            axios({
-                method: 'post',
-                url: API_URL,
-                data: {
-                    "ttfb": ttfb,
-                    "fcp": fcp,
-                    "domLoad": domLoad,
-                    "windowLoad": windowLoad,
-                    "networkTimings": networkTimings
-                }
-            }).then((res) => {
-                console.log("performance analytics are send to the api")
-            }).catch((err) => {
-                console.log("error while sending performance analytics to the api")
-            });
-        })
-    })
+        // Send a POST request
+        const API_URL = "https://perfanalytics-backend.herokuapp.com/analytics";
+        axios({
+            method: 'post',
+            url: API_URL,
+            data: {
+                "ttfb": ttfb,
+                "fcp": fcp,
+                "domLoad": domLoad,
+                "windowLoad": windowLoad,
+                "networkTimings": networkTimings
+            }
+        }).then((res) => {
+            console.log("performance analytics are send to the api")
+        }).catch((err) => {
+            console.log("error while sending performance analytics to the api")
+        });
+    });
 }
-
-
